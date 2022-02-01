@@ -4,7 +4,7 @@ import { BrowserRouter, Link } from 'react-router-dom';
 
 export default function LargeNav() {
   return (
-    <div css={tw`hidden md:flex justify-between z-50`}>
+    <div css={tw`z-50 justify-between hidden md:flex`}>
         <BrowserRouter>
       <Link to="/">
         <a css={tw`flex items-center text-yellow-600 cursor-pointer`}>
@@ -17,7 +17,7 @@ export default function LargeNav() {
           <span css={tw`font-bold`}>GONGSWAP</span>
         </a>
       </Link>
-      <ul css={tw`flex list-none space-x-8 text-yellow-600`}>
+      <ul css={tw`flex space-x-8 text-yellow-600 list-none`}>
         <li css={tw`cursor-pointer`}>
           <Link to="/">
             <a css={tw`cursor-pointer`}>Home</a>
@@ -34,9 +34,8 @@ export default function LargeNav() {
           </Link>
         </li>
         <li>
-          <Link to="/">
-            <a>Swap</a>
-          </Link>
+        <a href="https://app.gongswap.finance/">Swap</a>
+         
         </li>
         <li>
           <Link to="/">
@@ -52,7 +51,7 @@ export default function LargeNav() {
           <Link to="/">
             <a>
               <button
-                css={tw`text-white bg-yellow-600 py-2 px-3 rounded cursor-pointer hover:bg-yellow-500 border-0`}
+                css={tw`px-3 py-2 text-white bg-yellow-600 border-0 rounded cursor-pointer hover:bg-yellow-500`}
               >
                 Join Airdrop
               </button>

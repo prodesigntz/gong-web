@@ -5,31 +5,31 @@ export default function Showcase() {
   return (
     <BrowserRouter>
     <div css={tw`mt-20 md:mt-32`}>
-      <h3 css={tw`text-gray-500 font-mono text-2xl`}>GONG Swap Ecosystem.</h3>
+      <h3 css={tw`font-mono text-2xl text-gray-500`}>GONG Swap Ecosystem.</h3>
       <div
-        css={tw` flex-col space-y-6 md:space-x-4 md:space-y-0 md:flex md:flex-row md:justify-between`}
+        css={tw`flex-col space-y-6  md:space-x-4 md:space-y-0 md:flex md:flex-row md:justify-between`}
         id="showcase"
       >
         <div
           className="feature-box"
-          css={tw`text-right border-2 justify-end rounded flex-col p-6 text-gray-200 shadow-xl md:w-4/12`}
+          css={tw`flex-col justify-end p-6 text-right text-gray-200 border-2 rounded shadow-xl md:w-4/12`}
         >
-          <h3 css={tw` text-xl`}>SWAP</h3>
-          <div css={tw`list-none text-right font-light`}>
+          <h3 css={tw`text-xl `}>SWAP</h3>
+          <div css={tw`font-light text-right list-none`}>
             <p css={tw`text-justify h-28`}>
               Swap your favorite tokens,right on our onboard swap feature.
             </p>
           </div>
-          <Link to="/">
-            <a css={tw`text-yellow-600 cursor-pointer`}>Swap {`>`} </a>
-          </Link>
+       
+            <a  href="https://app.gongswap.finance/" css={tw`text-yellow-600 cursor-pointer`}>Swap {`>`} </a>
+      
         </div>
         <div
           className="feature-box"
-          css={tw`text-right border-2 justify-end rounded flex-col p-6 text-gray-200 shadow-xl md:w-4/12`}
+          css={tw`flex-col justify-end p-6 text-right text-gray-200 border-2 rounded shadow-xl md:w-4/12`}
         >
-          <h3 css={tw` text-xl`}>NFT</h3>
-          <div css={tw`list-none text-right font-light`}>
+          <h3 css={tw`text-xl `}>NFT</h3>
+          <div css={tw`font-light text-right list-none`}>
             <p css={tw`text-justify h-28`}>
               We are proud to provide cross-blockchain support, starting with a
               gas-free marketplace on the BSC Smartchain Network.
@@ -41,10 +41,10 @@ export default function Showcase() {
         </div>
         <div
           className="feature-box"
-          css={tw`text-right border-2 justify-end rounded flex-col p-6 text-gray-200 shadow-xl md:w-4/12`}
+          css={tw`flex-col justify-end p-6 text-right text-gray-200 border-2 rounded shadow-xl md:w-4/12`}
         >
-          <h3 css={tw` text-xl`}>IDO</h3>
-          <div css={tw`list-none text-right font-light`}>
+          <h3 css={tw`text-xl `}>IDO</h3>
+          <div css={tw`font-light text-right list-none`}>
             <p css={tw`text-justify h-28`}>
               Our token project utilizes full potential of IDO, of which
               Individual investors fund projects issuing IDOs in the same way
@@ -52,7 +52,7 @@ export default function Showcase() {
             </p>
           </div>
           <Link to="/">
-            <a css={tw`text-yellow-600 cursor-pointer cursor-pointer`}>
+            <a css={tw`text-yellow-600 cursor-pointer`}>
               Learn more {`>`}{' '}
             </a>
           </Link>

@@ -16,7 +16,7 @@ export default function MobileNav() {
             width={30}
             height={30}
           />
-          <span css={tw`font-bold text-sm`}>GONGSWAP</span>
+          <span css={tw`text-sm font-bold`}>GONGSWAP</span>
         </a>
       </Link>
       {!openedMenu && (
@@ -40,7 +40,7 @@ export default function MobileNav() {
       {openedMenu && (
         <ul
           className="mobile-nav"
-          css={tw`absolute top-36 left-0 flex-col list-none space-y-8 text-yellow-600 w-full h-screen py-20 z-10`}
+          css={tw`absolute left-0 z-10 flex-col w-full h-screen py-20 space-y-8 text-yellow-600 list-none top-36`}
         >
           <li>
             <Link to="/">
@@ -58,9 +58,7 @@ export default function MobileNav() {
             </Link>
           </li>
           <li>
-            <Link to="/">
-              <a>Swap</a>
-            </Link>
+          <a href="https://app.gongswap.finance/">Swap</a>
           </li>
           <li>
             <Link to="/">
@@ -76,7 +74,7 @@ export default function MobileNav() {
             <Link to="/">
               <a>
                 <button
-                  css={tw`text-white bg-yellow-600 py-2 px-3 rounded border-0 cursor-pointer hover:bg-yellow-500`}
+                  css={tw`px-3 py-2 text-white bg-yellow-600 border-0 rounded cursor-pointer hover:bg-yellow-500`}
                 >
                   Join Airdrop
                 </button>
