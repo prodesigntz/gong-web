@@ -1,6 +1,7 @@
 import tw, { css } from 'twin.macro';
-import {  BrowserRouter, Link } from 'react-router-dom';
+import {  BrowserRouter } from 'react-router-dom';
 import { useState } from 'react';
+import {Link} from 'react-scroll'
 
 export default function MobileNav() {
   const [openedMenu, setOpenedMenu] = useState(false);
@@ -48,12 +49,12 @@ export default function MobileNav() {
             </Link>
           </li>
           <li>
-            <Link to="/#tokenomics">
+            <Link to="tokenomics">
               <a>Tokenomics</a>
             </Link>
           </li>
           <li>
-            <Link to="/#roadmap">
+            <Link to="roadmap">
               <a>Roadmap</a>
             </Link>
           </li>
@@ -66,9 +67,7 @@ export default function MobileNav() {
             </Link>
           </li>
           <li>
-            <Link to="/">
-              <a>IDO</a>
-            </Link>
+          <a href="https://presale.gongswap.finance">IDO</a>
           </li>
           <li>
             <Link to="/">

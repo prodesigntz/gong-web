@@ -1,8 +1,13 @@
 import tw, { css } from 'twin.macro';
-import { BrowserRouter, Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
+import {Link} from 'react-scroll'
 
+
+
+const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop)   
 
 export default function LargeNav() {
+
   return (
     <div css={tw`z-50 justify-between hidden md:flex`}>
         <BrowserRouter>
@@ -24,28 +29,26 @@ export default function LargeNav() {
           </Link>
         </li>
         <li>
-          <Link to="/#tokenomics">
-            <a>Tokenomics</a>
+        <Link  to="tokenomics" spy={true} smooth={true}>
+        <a css={tw`cursor-pointer`}>Tokenomics</a>
           </Link>
         </li>
         <li>
-          <Link to="/#roadmap">
-            <a>Roadmap</a>
+          <Link to="roadmap">
+          <a css={tw`cursor-pointer`}>Roadmap</a>
           </Link>
         </li>
         <li>
-        <a href="https://app.gongswap.finance/">Swap</a>
+        <a href="https://app.gongswap.finance">Swap</a>
          
         </li>
         <li>
-          <Link to="/">
+          <Link to="/#">
             <a>NFTs</a>
           </Link>
         </li>
         <li>
-          <Link to="/">
-            <a>IDO</a>
-          </Link>
+        <a href="https://presale.gongswap.finance">IDO</a>
         </li>
         <li>
           <Link to="/">

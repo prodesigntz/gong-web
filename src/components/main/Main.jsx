@@ -1,5 +1,6 @@
 import tw, { css } from 'twin.macro';
-import {Link, BrowserRouter} from 'react-router-dom';
+import { BrowserRouter} from 'react-router-dom';
+import {Link} from 'react-scroll'
 
 import { Tab } from '..';
 import { MainComponent, Hero } from './Main.styled.components';
@@ -11,10 +12,10 @@ export default function Main() {
       <MainComponent variant="large">
         {/* Large Hero */}
         <Hero variant="large">
-          <h1 css={tw`text-white text-4xl mb-4`}>
+          <h1 css={tw`mb-4 text-4xl text-white`}>
             Limitless Exchange On the Go
           </h1>
-          <h2 css={tw`text-gray-200 text-lg font-light`}>
+          <h2 css={tw`text-lg font-light text-gray-200`}>
             Experience full freedom through a public decentralized blockchain
             exchange{' '}
           </h2>
@@ -28,37 +29,36 @@ export default function Main() {
           </p>
           <div css={tw`flex space-x-4`}>
             <button
-              css={tw`text-white bg-yellow-600 py-2 px-3 rounded cursor-pointer hover:bg-yellow-500 border-0`}
+              css={tw`px-3 py-2 text-white bg-yellow-600 border-0 rounded cursor-pointer hover:bg-yellow-500`}
             >
               <Link to="/">
                 <a>Claim Airdrop</a>
               </Link>
             </button>
             <button
-              css={tw`py-2 px-3 rounded cursor-pointer border-yellow-600 text-yellow-600 bg-transparent hover:bg-yellow-500 hover:text-white`}
+              css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
             >
-              <Link to="/">
-                <a>Join Pre-sale</a>
-              </Link>
+               <a href="https://presale.gongswap.finance">Join Pre-sale</a>
+           
             </button>
             <button
-              css={tw`py-2 px-3 rounded cursor-pointer border-yellow-600 text-yellow-600 bg-transparent hover:bg-yellow-500 hover:text-white`}
+              css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
             >
-              <Link to="/">
+              <Link to="roadmap">
                 <a>Roadmap</a>
               </Link>
             </button>
           </div>
         </Hero>
-        <Tab />
+        {/* <Tab /> */}
       </MainComponent>
       {/* Mobile Hero */}
       <MainComponent>
         <Hero>
-          <h1 css={tw`text-white text-4xl mb-4`}>
+          <h1 css={tw`mb-4 text-4xl text-white`}>
             Limitless Exchange On the Go
           </h1>
-          <h2 css={tw`text-gray-200 text-lg font-light`}>
+          <h2 css={tw`text-lg font-light text-gray-200`}>
             Experience full freedom through a public centralized blockchain
             exchange{' '}
           </h2>
@@ -72,21 +72,21 @@ export default function Main() {
           </p>
           <div css={tw`flex space-x-4`}>
             <button
-              css={tw`text-white bg-yellow-600 py-2 px-3 rounded cursor-pointer hover:bg-yellow-500 border-0`}
+              css={tw`px-3 py-2 text-white bg-yellow-600 border-0 rounded cursor-pointer hover:bg-yellow-500`}
             >
               <Link to="/">
                 <a>Claim Airdrop</a>
               </Link>
             </button>
             <button
-              css={tw`py-2 px-3 rounded cursor-pointer border-yellow-600 text-yellow-600 bg-transparent hover:bg-yellow-500 hover:text-white`}
+              css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
             >
               <Link to="/">
                 <a>Join Pre-sale</a>
               </Link>
             </button>
             <button
-              css={tw`py-2 px-3 rounded cursor-pointer border-yellow-600 text-yellow-600 bg-transparent hover:bg-yellow-500 hover:text-white`}
+              css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
             >
               <Link to="/">
                 <a>Roadmap</a>
@@ -94,7 +94,7 @@ export default function Main() {
             </button>
           </div>
         </Hero>
-        <Tab />
+        {/* <Tab /> */}
       </MainComponent>
       </BrowserRouter>
 

@@ -12,23 +12,23 @@ import { MdAlternateEmail } from 'react-icons/md';
 
 export default function Socials() {
   return (
-    <div css={tw`mt-20 md:mt-32 flex flex-col w-full space-y-6 md:space-y-0`}>
-      <h3 css={tw`text-gray-500 text-center font-mono md:text-2xl`}>
+    <div css={tw`flex flex-col w-full mt-20 space-y-6 md:mt-32 md:space-y-0`}>
+      <h3 css={tw`font-mono text-center text-gray-500 md:text-2xl`}>
         Join Our Social Medias
       </h3>
-      <div css={tw`hidden md:block mx-auto space-x-16`}>
+      <div css={tw`hidden mx-auto space-x-16 md:block`}>
         <a
           href="https://t.me/gongswap_chat"
           css={tw`text-gray-300 hover:text-yellow-600`}
         >
           <FaTelegramPlane size={25} />
         </a>
-        <a href="" css={tw`text-gray-300 hover:text-yellow-600`}>
+        {/* <a href="" css={tw`text-gray-300 hover:text-yellow-600`}>
           <FaFacebook size={25} />
-        </a>
-        <a href="" css={tw`text-gray-300 hover:text-yellow-600`}>
+        </a> */}
+        {/* <a href="" css={tw`text-gray-300 hover:text-yellow-600`}>
           <FaInstagram size={25} />
-        </a>
+        </a> */}
         <a
           href="https://twitter.com/gongswap"
           css={tw`text-gray-300 hover:text-yellow-600`}
@@ -51,7 +51,7 @@ export default function Socials() {
           <MdAlternateEmail size={25} />
         </a>
       </div>
-      <div css={tw`md:hidden mx-auto space-x-6`}>
+      <div css={tw`mx-auto space-x-6 md:hidden`}>
         <a
           href="https://t.me/gongswap_chat"
           css={tw`text-gray-300 hover:text-yellow-600`}
