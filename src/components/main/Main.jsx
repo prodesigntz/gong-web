@@ -11,7 +11,7 @@ export default function Main() {
     <BrowserRouter>
       <MainComponent variant="large">
         {/* Large Hero */}
-        <Hero variant="large">
+        <Hero variant="large" id="home">
           <h1 css={tw`mb-4 text-4xl text-white`}>
             Limitless Exchange On the Go
           </h1>
@@ -31,21 +31,21 @@ export default function Main() {
             <button
               css={tw`px-3 py-2 text-white bg-yellow-600 border-0 rounded cursor-pointer hover:bg-yellow-500`}
             >
-              <Link to="/">
-                <a>Claim Airdrop</a>
+        
+              <a href="https://presale.gongswap.finance">Join Pre-sale</a>
+            </button>
+            <button
+              css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
+            >
+               <Link to="/">
+                <a>LightPaper</a>
               </Link>
             </button>
             <button
               css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
             >
-               <a href="https://presale.gongswap.finance">Join Pre-sale</a>
-           
-            </button>
-            <button
-              css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
-            >
               <Link to="roadmap">
-                <a>Roadmap</a>
+                <a>Airdrop</a>
               </Link>
             </button>
           </div>
@@ -74,22 +74,20 @@ export default function Main() {
             <button
               css={tw`px-3 py-2 text-white bg-yellow-600 border-0 rounded cursor-pointer hover:bg-yellow-500`}
             >
-              <Link to="/">
-                <a>Claim Airdrop</a>
+             <a href="https://presale.gongswap.finance">Join Pre-sale</a>
+            </button>
+            <button
+              css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
+            >
+              <Link to="/#">
+                <a>LightPaper</a>
               </Link>
             </button>
             <button
               css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
             >
-              <Link to="/">
-                <a>Join Pre-sale</a>
-              </Link>
-            </button>
-            <button
-              css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
-            >
-              <Link to="/">
-                <a>Roadmap</a>
+              <Link to="/#">
+                <a>Airdrop</a>
               </Link>
             </button>
           </div>

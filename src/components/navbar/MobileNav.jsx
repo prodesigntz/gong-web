@@ -44,7 +44,7 @@ export default function MobileNav() {
           css={tw`absolute left-0 z-10 flex-col w-full h-screen py-20 space-y-8 text-yellow-600 list-none top-36`}
         >
           <li>
-            <Link to="/">
+            <Link to="home">
               <a css={tw`cursor-pointer`}>Home</a>
             </Link>
           </li>
@@ -62,8 +62,8 @@ export default function MobileNav() {
           <a href="https://app.gongswap.finance/">Swap</a>
           </li>
           <li>
-            <Link to="/">
-              <a>NFTs</a>
+            <Link to="nftbox">
+              <a css={tw`cursor-pointer`}>NFTs</a>
             </Link>
           </li>
           <li>

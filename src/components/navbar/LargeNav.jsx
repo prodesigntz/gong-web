@@ -24,7 +24,7 @@ export default function LargeNav() {
       </Link>
       <ul css={tw`flex space-x-8 text-yellow-600 list-none`}>
         <li css={tw`cursor-pointer`}>
-          <Link to="/">
+          <Link to="home">
             <a css={tw`cursor-pointer`}>Home</a>
           </Link>
         </li>
@@ -43,8 +43,8 @@ export default function LargeNav() {
          
         </li>
         <li>
-          <Link to="/#">
-            <a>NFTs</a>
+          <Link to="nftbox">
+            <a  css={tw`cursor-pointer`}>NFTs</a>
           </Link>
         </li>
         <li>

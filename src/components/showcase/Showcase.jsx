@@ -7,7 +7,7 @@ export default function Showcase() {
     <div css={tw`mt-20 md:mt-32`}>
       <h3 css={tw`font-mono text-2xl text-gray-500`}>GONG Swap Ecosystem.</h3>
       <div
-        css={tw`flex-col space-y-6  md:space-x-4 md:space-y-0 md:flex md:flex-row md:justify-between`}
+        css={tw`flex-col space-y-6 md:space-x-4 md:space-y-0 md:flex md:flex-row md:justify-between`}
         id="showcase"
       >
         <div
@@ -24,7 +24,7 @@ export default function Showcase() {
             <a  href="https://app.gongswap.finance/" css={tw`text-yellow-600 cursor-pointer`}>Swap {`>`} </a>
       
         </div>
-        <div
+        <div id="nftbox"
           className="feature-box"
           css={tw`flex-col justify-end p-6 text-right text-gray-200 border-2 rounded shadow-xl md:w-4/12`}
         >
@@ -51,11 +51,12 @@ export default function Showcase() {
               traditional firms acquire venture capital before launching.
             </p>
           </div>
-          <Link to="/">
-            <a css={tw`text-yellow-600 cursor-pointer`}>
+        
+       
+            <a href="https://presale.gongswap.finance" css={tw`text-yellow-600 cursor-pointer`}>
               Learn more {`>`}{' '}
             </a>
-          </Link>
+       
         </div>
       </div>
     </div>
