@@ -78,13 +78,10 @@ export default function Tokenomics() {
               />
             </div>
             <ul css={tw`p-0 my-auto space-y-4 text-yellow-600 list-disc`}>
-              <li>Development : 30%</li>
-              <li>Airdrop : 2%</li>
-              <li>Charity : 20%</li>
-              <li>Pre Sale : 3%</li>
-              <li>Burning : 20%</li>
-              <li>Rewards : 5%</li>
-              <li>Marketing : 20%</li>
+              <li>Locked : 70%</li>
+              <li>Development : 20%</li>
+              <li>Burning : 10%</li>
+          
             </ul>
           </div>
           {/* For Small Screen */}
@@ -107,13 +104,9 @@ export default function Tokenomics() {
               />
             </div>
             <ul css={tw`p-0 mx-auto space-y-4 text-yellow-600 list-disc`}>
-              <li>Development : 30%</li>
-              <li>Airdrop : 2%</li>
-              <li>Charity : 20%</li>
-              <li>Pre Sale : 3%</li>
-              <li>Burning : 20%</li>
-              <li>Rewards : 5%</li>
-              <li>Marketing : 20%</li>
+              <li>Locked : 70%</li>
+              <li>Development : 20%</li>
+              <li>Burning : 10%</li>
             </ul>
           </div>
         </div>
@@ -125,18 +118,14 @@ export default function Tokenomics() {
 
 const data = {
   labels: [
+    'Locked',
     'Development',
-    'Airdrop',
-    'Charity',
-    'Pre Sale',
     'Burning',
-    'Rewards',
-    'Marketing',
   ],
   datasets: [
     {
       label: 'Tokenomics',
-      data: [30, 2, 20, 3, 20, 5, 20],
+      data: [70, 20, 10],
       backgroundColor: ['rgb(54, 90, 104)'],
       hoverOffset: 4,
     },
