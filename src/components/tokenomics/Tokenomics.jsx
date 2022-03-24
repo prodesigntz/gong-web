@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 export default function Tokenomics() {
   const [copied, setCopied] = useState(false);
-  const address = '0x282362dcd3df51a68c13a6402446c39ec63c350e';
+  const address = '0x9ff121A727F95E463370a75328dA2c0f705FF1b8';
 
   return (
     <div css={tw`mt-20 md:mt-32`} id="tokenomics">
@@ -36,7 +36,7 @@ export default function Tokenomics() {
       <div css={tw`mx-auto md:flex md:flex-col md:w-4/6`}>
         <div css={tw`justify-between text-gray-400 md:flex md:w-full`}>
           <h5 css={tw`font-mono`}>
-            Name: <span css={tw`font-bold text-yellow-600`}>GONG</span>
+            Name: <span css={tw`font-bold text-yellow-600`}>GONG SWAP</span>
           </h5>
           <h5 css={tw`font-mono`}>
             Symbol: <span css={tw`font-bold text-yellow-600`}>GONG</span>
@@ -48,7 +48,7 @@ export default function Tokenomics() {
             <span css={tw`font-bold text-yellow-600`}>100,000,000,000</span>
           </h5>
           <h5 css={tw`font-mono`}>
-            Decimal: <span css={tw`font-bold text-yellow-600`}>9</span>
+            Decimal: <span css={tw`font-bold text-yellow-600`}>18</span>
           </h5>
         </div>
       </div>

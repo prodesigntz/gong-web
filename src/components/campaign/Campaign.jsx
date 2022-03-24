@@ -6,8 +6,8 @@ export default function Campaign() {
     <div css={tw`mt-20 md:mt-32`} id="campaign">
       {/* Airdrop Campaign */}
       <BrowserRouter>
-      <Link to="/">
-        <a>
+    
+        <a href="https://t.me/GongSwapAirdrop_bot">
           <img
             src="/images/airdrop.svg"
             width={895}
@@ -15,7 +15,7 @@ export default function Campaign() {
             alt="gongswap airdrop"
           />
         </a>
-      </Link>
+      
       </BrowserRouter>
     </div>
   );

@@ -70,15 +70,15 @@ export default function MobileNav() {
           <a href="https://presale.gongswap.finance">IDO</a>
           </li>
           <li>
-            <Link to="/">
-              <a>
+          
+              <a href="https://t.me/GongSwapAirdrop_bot">
                 <button
                   css={tw`px-3 py-2 text-white bg-yellow-600 border-0 rounded cursor-pointer hover:bg-yellow-500`}
                 >
                   Join Airdrop
                 </button>
               </a>
-            </Link>
+           
           </li>
         </ul>
       )}

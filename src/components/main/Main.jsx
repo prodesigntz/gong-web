@@ -44,9 +44,7 @@ export default function Main() {
             <button
               css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
             >
-              <Link to="roadmap">
-                <a>Airdrop</a>
-              </Link>
+             <a href="https://t.me/GongSwapAirdrop_bot">Airdrop</a>
             </button>
           </div>
         </Hero>
@@ -84,9 +82,9 @@ export default function Main() {
             <button
               css={tw`px-3 py-2 text-yellow-600 bg-transparent border-yellow-600 rounded cursor-pointer hover:bg-yellow-500 hover:text-white`}
             >
-              <Link to="/#">
-                <a>Airdrop</a>
-              </Link>
+             
+                <a href="https://t.me/GongSwapAirdrop_bot">Airdrop</a>
+              
             </button>
           </div>
         </Hero>
